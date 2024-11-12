@@ -1,0 +1,115 @@
+body {
+    font-family: Tahoma;
+    background: linear-gradient(90deg, rgb(70, 70, 197) 0%, rgba(0,202,244,1) 100%);
+    margin: 0;
+}
+
+.btn-download {
+    background: linear-gradient(90deg, rgb(2, 68, 19) 0%, rgb(1, 250, 1) 100%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: fantasy;
+    color: black;
+}
+.btn-download:hover {
+    background-color: #45a049;
+}
+.text-style {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.navbar {
+    background: linear-gradient(90deg, rgb(70, 70, 197) 0%, rgba(0,202,244,1) 100%);
+    padding: 1rem;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard-container {
+    display: grid;
+    background: linear-gradient(90deg, rgb(70, 70, 197) 0%, rgba(0,202,244,1) 100%);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1920px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.tab-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(187, 193, 199);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.data-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.dashboard-container h1, .dashboard-container p {
+    margin: 10px 0;
+}
+.font-style{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:fantasy;
+    color: black;
+}
+.sub-font{
+    font-size: 20px;
+    font-family: fantasy;
+    color: black;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .data-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .tab-container {
+        padding: 1rem;
+    }
+
+    .font-style {
+        font-size: 18px;
+    }
+
+    .sub-font {
+        font-size: 16px;
+    }
+
+    .btn-download {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
